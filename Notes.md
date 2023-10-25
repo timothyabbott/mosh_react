@@ -27,7 +27,11 @@ tsconfig - a bunch of settings we shouldn't need to change
 vite.confog.js - config for vite, we should need to change this either
 
 
-# Creating a React component
+# 7. Creating a React component
 We created message.tsx. This is like jsx but for typescript. There is just a convention to follow here, no rules.
 
 There are two main ways to create a componenet; class based and fuction based. Function based is more popular these days.
+
+# 8. How React Works.
+React creates a virtual DOM based upon the component tree. A actual DOM is created by a library called REACTDOM.    When the state or data of a component is updated the virtual DOM is updated. React compares the virtual DOM with the actual DOM and updates any elements requiring updates.
+
