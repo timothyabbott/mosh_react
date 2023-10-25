@@ -35,3 +35,8 @@ There are two main ways to create a componenet; class based and fuction based. F
 # 8. How React Works.
 React creates a virtual DOM based upon the component tree. A actual DOM is created by a library called REACTDOM.    When the state or data of a component is updated the virtual DOM is updated. React compares the virtual DOM with the actual DOM and updates any elements requiring updates.
 
+# 9. React Ecosystem
+React is a JS library for creating user interfaces. Not like Vue or Angular which are framworks.
+React is just for creating UI components, where as Angular and Vue also handle I18N, Routing etc.
+
+We will FOcus on React and then look at other Libararies that work with React.
