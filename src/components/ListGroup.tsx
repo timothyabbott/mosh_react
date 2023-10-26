@@ -1,7 +1,11 @@
 import { useState } from "react";
 
-function ListGroup() {
-    let items = ['New York', 'London', 'Paris', 'Madrid']
+interface Props{
+    items:string[];
+    heading:string;
+}
+
+function ListGroup({items,heading}:Props) {
     // this is how we setup a componennt to have state. 
     // selected index is the stateful value, and the setSelectedIndex is the function to update the state
     // -1 is the default value of the stateful value.
@@ -9,7 +13,7 @@ function ListGroup() {
     
     return (
       <>
-        <h1>List</h1>
+        <h1>{heading}</h1>
         <ul className="list-group">
           {/* this works because JS will return the right most value in any logical and comparison */}
           {items.length === 0 && <p>No Item</p>}
