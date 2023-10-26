@@ -44,3 +44,11 @@ We will FOcus on React and then look at other Libararies that work with React.
 
 # 10. Building component
 This sections will focus on JSX markup, state, props and debugging
+
+## 11.  Creating a listgroup component
+
+We needed to install bootstrap for this to give a nice look and feel.
+
+`npm i boostrap`
+
+Handy shortcut CMD + D gives you multiple cursors for the same word.
