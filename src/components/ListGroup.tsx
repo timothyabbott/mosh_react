@@ -1,10 +1,12 @@
-import { MouseEvent } from "react";
+import { useState } from "react";
 
 function ListGroup() {
     let items = ['New York', 'London', 'Paris', 'Madrid']
-    const handleClick = (event:MouseEvent) => console.log(event) 
+    // this is how we setup a componennt to have state. 
+    // selected index is the stateful value, and the setSelectedIndex is the function to update the state
+    // -1 is the default value of the stateful value.
+    const [selectedIndex, setSelectedIndex] = useState(-1)
     
-
     return (
       <>
         <h1>List</h1>
@@ -15,10 +17,14 @@ function ListGroup() {
                 the key is needed so that react can keep track of the elements*/}
           {items.map((item, index) => (
             <li
-              className="list-group-item"
-            //   this works but we can also use an external function
-            //   onClick={() => console.log(item, index)}
-            onClick={handleClick}
+              className={
+                selectedIndex === index
+                  ? "list-group-item active"
+                  : "list-group-item"
+              }
+              //   this works but we can also use an external function
+              //   onClick={() => console.log(item, index)}
+              onClick={() => setSelectedIndex(index)}
               key={item}
             >
               {item}
