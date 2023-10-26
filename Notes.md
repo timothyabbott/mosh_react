@@ -42,7 +42,7 @@ React is just for creating UI components, where as Angular and Vue also handle I
 
 We will FOcus on React and then look at other Libararies that work with React.
 
-# 10. Building component
+# 10. Building components
 This sections will focus on JSX markup, state, props and debugging
 
 ## 11.  Creating a listgroup component
@@ -52,3 +52,13 @@ We needed to install bootstrap for this to give a nice look and feel.
 `npm i boostrap`
 
 Handy shortcut CMD + D gives you multiple cursors for the same word.
+
+## 12. Fragments
+
+Handy shortcut Select code you want to wrap, CMD + Shift + P to open the command pallet. Then search for "wrap with abbreviation" to wrap code. In this case we used 
+```
+<>
+</>
+```
+
+
