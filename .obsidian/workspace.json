@@ -148,6 +148,9 @@
   },
   "active": "4f5d7bc60095d4de",
   "lastOpenFiles": [
+    "Delete me.md",
+    "Notes.md",
+    "vite.config.ts.timestamp-1698396010661-532b61a77c7e9.mjs",
     "src/components/ListGroup.tsx",
     "src/components",
     "vite.config.ts.timestamp-1698332778679-c3898d65425b4.mjs",
@@ -157,8 +160,6 @@
     "node_modules/@esbuild/win32-arm64",
     "node_modules/@esbuild/openbsd-x64",
     "node_modules/@esbuild/sunos-x64",
-    "node_modules/@esbuild/netbsd-x64",
-    "node_modules/@esbuild/linux-x64",
     "node_modules/bootstrap/README.md",
     "node_modules/@popperjs/core/README.md",
     "node_modules/@popperjs/core/LICENSE.md"

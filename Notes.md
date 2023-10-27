@@ -67,4 +67,6 @@ Handy shortcut Select code you want to wrap, CMD + Shift + P to open the command
 ## 15. Handling Events
 ## 16. Managing State
 ## 17. Passing data via props
+## 18. Passing functions via props
+This is how we can communicate to a parent element that the child element has been changed in some way. We don't want to implement this code in the child component, we will always need the same child component to be used by the same parent component. i.e. our component will no linger be reusable.
 
