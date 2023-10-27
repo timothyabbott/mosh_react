@@ -31,7 +31,7 @@ vite.confog.js - config for vite, we should need to change this either
 ## 7. Creating a React component
 We created message.tsx. This is like jsx but for typescript. There is just a convention to follow here, no rules.
 
-There are two main ways to create a componenet; class based and fuction based. Function based is more popular these days.
+There are two main ways to create a component; class based and function based. Function based is more popular these days.
 
 ## 8. How React Works.
 React creates a virtual DOM based upon the component tree. A actual DOM is created by a library called REACTDOM.    When the state or data of a component is updated the virtual DOM is updated. React compares the virtual DOM with the actual DOM and updates any elements requiring updates.
@@ -78,3 +78,6 @@ Props should be immutable
 State is mutable, i.e. can be changed.
 
 A change to either will cause a re-render the component, and update the DOM as necessary.
+
+## 20. Passing children
+Handy shortcut: install "ES7+ React/Redux/React-Native snippets" and a bunch of shortcuts will be added to vscode. In this example we use rafce which stands for "react arrow function export component"
