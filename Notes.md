@@ -70,3 +70,11 @@ Handy shortcut Select code you want to wrap, CMD + Shift + P to open the command
 ## 18. Passing functions via props
 This is how we can communicate to a parent element that the child element has been changed in some way. We don't want to implement this code in the child component, we will always need the same child component to be used by the same parent component. i.e. our component will no linger be reusable.
 
+## 19. State vs Props
+State is like the internal state of a component.
+Props are the input that are passed in to a components.
+
+Props should be immutable
+State is mutable, i.e. can be changed.
+
+A change to either will cause a re-render the component, and update the DOM as necessary.
