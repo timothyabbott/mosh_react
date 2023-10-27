@@ -85,3 +85,6 @@ Handy shortcut: install "ES7+ React/Redux/React-Native snippets" and a bunch of 
 ## 21. Inspecting Components with React Dev Tools
 ![[Screenshot 2023-10-27 at 21.07.51.png]]
 The hierarchy of the components can be seen. yes the eye icon to see the component in the elements view, use the <> icon to see the source code of the element
+
+## 22. Exercise: creating a button component
+look here for info about validating props,  making props them optional and default values.
