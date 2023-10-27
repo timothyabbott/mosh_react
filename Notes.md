@@ -81,3 +81,7 @@ A change to either will cause a re-render the component, and update the DOM as n
 
 ## 20. Passing children
 Handy shortcut: install "ES7+ React/Redux/React-Native snippets" and a bunch of shortcuts will be added to vscode. In this example we use rafce which stands for "react arrow function export component"
+
+## 21. Inspecting Components with React Dev Tools
+![[Screenshot 2023-10-27 at 21.07.51.png]]
+The hierarchy of the components can be seen. yes the eye icon to see the component in the elements view, use the <> icon to see the source code of the element
