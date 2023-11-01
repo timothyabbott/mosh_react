@@ -1,6 +1,9 @@
+import { useState } from "react";
 import Alert from "./components/Alert";
 import Button from "./components/Button";
+import DismisableAlert from "./components/DismisableAlert";
 import ListGroup from "./components/ListGroup";
+
 function App() {
   let items = ["New York", "London", "Paris", "Madrid"];
   items = [];
@@ -9,6 +12,11 @@ function App() {
   };
   const handleButtonClick = () => {
     console.log("you clicked the button");
+    setVisible(true);
+  };
+  let [visible, setVisible] = useState(false);
+  const handleClose = () => {
+    setVisible(false);
   };
 
   return (
@@ -18,7 +26,6 @@ function App() {
         heading="Cities"
         onSelectItem={handleSelectedItem}
       />
-
       <Alert>
         <span>This is the Alert text </span>
       </Alert>
@@ -29,6 +36,9 @@ function App() {
           handleButtonClick();
         }}
       />
+      {visible && (
+        <DismisableAlert alertText="look out!" onClose={handleClose} />
+      )}
     </>
   );
 }

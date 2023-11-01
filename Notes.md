@@ -88,3 +88,19 @@ The hierarchy of the components can be seen. yes the eye icon to see the compone
 
 ## 22. Exercise: creating a button component
 look here for info about validating props,  making props them optional and default values.
+
+## 23. Exercise: Showing an alert
+It is sometimes difficult to tell where the state should belong. State should always reside in the component, props are passed down to children. In this case we altered "visible" between true and false. The state belongs on the parent, we can then conditionally render it.
+
+# 24. Styling components
+## 25. Vanilla CSS
+There are lots of css Libraries like Bootstrap and Material UI. only use Vanilla CSS if you really need/want to
+
+![[Pasted image 20231101211013.png]]
+
+There are lots of different ways of arranging css and files and js files. It is a preference. The rational behind this approach is that if the list group component was ever wanted somewhere else, you could move the whole folder and the styling would come with it.
+
+What the function index.ts performs is to reduce the clutter around importing files, by one less path item. the difference can be seen in apps.tsx. If a folder is imported then by default the compiler will look for a file called index. This index file in our case just exports the ListGroup.tsx
+
+The styling relevant to our component then goes in our ListGroup.css file.
+

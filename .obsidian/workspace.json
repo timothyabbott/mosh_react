@@ -18,8 +18,21 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "5a61af767004a0ce",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Notes.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -146,24 +159,45 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "4f5d7bc60095d4de",
+  "active": "5a61af767004a0ce",
   "lastOpenFiles": [
-    "src/components/Button.tsx",
-    "Screenshot 2023-10-27 at 21.07.51.png",
-    "src/components/Alert.tsx",
-    "Delete me.md",
+    "Pasted image 20231101211013.png",
+    "src/components/ListGroup/index.ts",
+    "Pasted image 20231101210312.png",
+    "src/components/ListGroup/ListGroup.tsx",
+    "src/components/ListGroup/ListGroup.css",
+    "src/components/ListGroup",
+    "src/components/ListGroupx/ListGroup.tsx",
+    "src/components/ListGroupx/ListGroup.css",
+    "src/components/ListGroup.css",
+    "src/components/ListGroupx",
+    "Untitled.md",
     "Notes.md",
-    "vite.config.ts.timestamp-1698396010661-532b61a77c7e9.mjs",
-    "src/components/ListGroup.tsx",
-    "src/components",
-    "vite.config.ts.timestamp-1698332778679-c3898d65425b4.mjs",
-    "node_modules/@esbuild/android-arm",
-    "node_modules/@esbuild/win32-x64",
-    "node_modules/@esbuild/win32-ia32",
-    "node_modules/@esbuild/win32-arm64",
-    "node_modules/@esbuild/openbsd-x64",
-    "node_modules/bootstrap/README.md",
-    "node_modules/@popperjs/core/README.md",
-    "node_modules/@popperjs/core/LICENSE.md"
+    "vite.config.ts.timestamp-1698504512853-0aa3dcea4beee.mjs",
+    "node_modules/react-bootstrap/cjs/useWrappedRefWithWarning.d.ts",
+    "node_modules/react-bootstrap/README.md",
+    "node_modules/dom-helpers/README.md",
+    "node_modules/@restart/hooks/README.md",
+    "node_modules/@restart/ui/README.md",
+    "node_modules/react-transition-group/README.md",
+    "node_modules/uncontrollable/README.md",
+    "node_modules/uncontrollable/lib/README.md",
+    "node_modules/uncontrollable/manual-releases.md",
+    "node_modules/uncontrollable/CHANGELOG.md",
+    "node_modules/prop-types/README.md",
+    "node_modules/@react-aria/ssr/README.md",
+    "node_modules/@restart/ui/node_modules/uncontrollable/README.md",
+    "node_modules/prop-types-extra/README.md",
+    "node_modules/@restart/ui/node_modules/uncontrollable/CHANGELOG.md",
+    "node_modules/prop-types-extra/CHANGELOG.md",
+    "node_modules/tslib/SECURITY.md",
+    "node_modules/tslib/README.md",
+    "node_modules/regenerator-runtime/README.md",
+    "node_modules/@types/warning/README.md",
+    "node_modules/@babel/runtime/README.md",
+    "node_modules/dequal/readme.md",
+    "node_modules/react-lifecycles-compat/README.md",
+    "node_modules/invariant/README.md",
+    "Screenshot 2023-10-27 at 21.07.51.png"
   ]
 }
