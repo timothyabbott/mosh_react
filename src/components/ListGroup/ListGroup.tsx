@@ -1,5 +1,5 @@
 import { useState } from "react";
- import './ListGroup.css'
+import styles from "./ListGroup.module.css";
 
 interface Props {
   items: string[];
@@ -16,7 +16,9 @@ function ListGroup({ items, heading, onSelectItem }: Props) {
   return (
     <>
       <h1>{heading}</h1>
-      <ul className="list-group">
+      {/* styles is now accessed as a js module but we need a string
+      there fore we join the list with .join(' ') */}
+      <ul className={[styles.listGroup, styles.container].join(" ")}>
         {/* this works because JS will return the right most value in any logical and comparison */}
         {items.length === 0 && <p>No Item</p>}
         {/* this is JS, we must wrap it in braces 
