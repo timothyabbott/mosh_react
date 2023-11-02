@@ -104,3 +104,13 @@ What the function index.ts performs is to reduce the clutter around importing fi
 
 The styling relevant to our component then goes in our ListGroup.css file.
 
+## 26.  CSS Modules
+
+we can have clashes where two css files reference the elements. This can be solved by using css modules.
+
+## 27. CSS in JS
+It is possible to have css in JS files. like the css modules approach but have the css in the same file. This is controversial but does have some benefits.
+- Styles are scoped to the JS 
+- All related JS/TS and CSS in one place
+- Easier to delete a component as all code is in one place
+- Easier to style code based on props / state
