@@ -114,3 +114,17 @@ It is possible to have css in JS files. like the css modules approach but have t
 - All related JS/TS and CSS in one place
 - Easier to delete a component as all code is in one place
 - Easier to style code based on props / state
+## 28. Separation of Concerns
+The idea of separation of concerns is to make sure that a section of code handles one specific piece of functionality. CSS in JS  doesn't violate this principle because the ListGroup Component does just one thing, regardless of where the CSS is.
+
+```
+<ListGroup
+        items={items}
+        heading="Cities"
+        onSelectItem={handleSelectedItem}
+      />
+```
+
+The above shows a clear interface to use out component and the user of the component doesn't need to worry about the implementation details
+
+
