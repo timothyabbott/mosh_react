@@ -104,6 +104,3 @@ What the function index.ts performs is to reduce the clutter around importing fi
 
 The styling relevant to our component then goes in our ListGroup.css file.
 
-## 26.  CSS Modules
-
-we can have clashes where two css files reference the elements. This can be solved by using css modules.

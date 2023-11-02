@@ -161,8 +161,6 @@
   },
   "active": "5a61af767004a0ce",
   "lastOpenFiles": [
-    "vite.config.ts.timestamp-1698913711184-c00cac992eee8.mjs",
-    "src/components/ListGroup/ListGroup.module.css",
     "Pasted image 20231101211013.png",
     "src/components/ListGroup/index.ts",
     "Pasted image 20231101210312.png",
@@ -176,6 +174,7 @@
     "Untitled.md",
     "Notes.md",
     "vite.config.ts.timestamp-1698504512853-0aa3dcea4beee.mjs",
+    "node_modules/react-bootstrap/cjs/useWrappedRefWithWarning.d.ts",
     "node_modules/react-bootstrap/README.md",
     "node_modules/dom-helpers/README.md",
     "node_modules/@restart/hooks/README.md",
