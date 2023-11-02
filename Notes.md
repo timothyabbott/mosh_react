@@ -127,4 +127,23 @@ The idea of separation of concerns is to make sure that a section of code handle
 
 The above shows a clear interface to use out component and the user of the component doesn't need to worry about the implementation details
 
+## 29. Inline Styles
+ This is considered a bad practice because it makes it more difficult to see where styles are being applied.
+ ```
+ {/* double braces because we are using jsx (one set of brackets) stayles takes an obeject(second set of braces) */}
+
+<ul className="list-group" style = {{backgroundColor: 'yellow'}} ></ul>
+```  
+
+because we are working in JSX hyphens aren't allowed. hence backgroundColor not background-color
+
+## 30. Popular UI Libraries
+- Bootstrap
+- Material UI
+- Tailwind
+are examples.
+
+we will be using chakra which is built on top of tailwind in a later project.
+
+
 
