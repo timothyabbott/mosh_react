@@ -21,6 +21,8 @@ function App() {
 
   return (
     <>
+      {/* double braces because we are using jsx (one set of brackets) stayles takes an obeject(second set of braces) */}
+      <ul className="list-group" style={{ backgroundColor: "yellow" }}></ul>
       <ListGroup
         items={items}
         heading="Cities"
