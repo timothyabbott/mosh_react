@@ -3,6 +3,8 @@ import Alert from "./components/Alert";
 import Button from "./components/Button";
 import DismisableAlert from "./components/DismisableAlert";
 import ListGroup from "./components/ListGroup";
+// in order to import this component, the react-icons library needs to be installed.
+import { BsFillCalendarFill } from "react-icons/bs";
 
 function App() {
   let items = ["New York", "London", "Paris", "Madrid"];
@@ -21,6 +23,11 @@ function App() {
 
   return (
     <>
+      <div>
+        {/* as this is a react component, we can Just use the component in tags 
+      We can also send props*/}
+        <BsFillCalendarFill title="this is the title" size="40" color="red" />
+      </div>
       <ListGroup
         items={items}
         heading="Cities"

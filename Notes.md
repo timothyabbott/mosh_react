@@ -147,3 +147,4 @@ we will be using chakra which is built on top of tailwind in a later project.
 
 
 
+## 31 Adding Icons
