@@ -78,7 +78,8 @@
               "state": {}
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -161,6 +162,9 @@
   },
   "active": "5a61af767004a0ce",
   "lastOpenFiles": [
+    "src/components/Heart/Heart.tsx",
+    "src/components/Heart",
+    "vite.config.ts.timestamp-1699306688300-a2ba58dedbbc8.mjs",
     "src/components/Button.tsx",
     "src/components/Button/Button.css",
     "src/components/Button/Button.module.css",
@@ -169,9 +173,6 @@
     "src/components/Button.tsx.bak",
     "src/components/Button/index.tsx",
     "src/components/Button/Button.tsx",
-    "src/components/Button",
-    "vite.config.ts.timestamp-1699132889507-e1dff2e1a7ebb.mjs",
-    "vite.config.ts.timestamp-1699132479538-38ac83a05d0de.mjs",
     "node_modules/react-icons/README.md",
     "node_modules/@emotion/unitless/README.md",
     "node_modules/css-to-react-native/README.md",
