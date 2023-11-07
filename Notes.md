@@ -151,4 +151,4 @@ we will be using chakra which is built on top of tailwind in a later project.
 ## 32 Exercise: Using CSS modules
 ## 33 Exercise: Creating a reusable like component
 
-
+# 34 Managing State
