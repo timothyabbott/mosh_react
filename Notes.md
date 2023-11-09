@@ -151,4 +151,88 @@ we will be using chakra which is built on top of tailwind in a later project.
 ## 32 Exercise: Using CSS modules
 ## 33 Exercise: Creating a reusable like component
 
-# 34 Managing State
+# 34 Managing Component State
+## 35 Understanding the State Hook
+### State is updated asynchronously
+if you log something just after changing state the state won't have changed.
+ - This is for performance reasons. All updates are applied first, then the state is updated. 
+### State is stored outside of the component
+
+ ![[Pasted image 20231107095825.png]]
+The above is problematic because the count will always be re-created at the time of execution of the functional Component. The variables associated with useState are stored outside of the Component.
+### Use hooks on the top level of components
+Because the state variables are stored externally, any if or while loops may affect the order of these variables meaning the wrong state variable could be updated.
+
+## 36 Choosing the State Structure
+
+### Only store what is needed
+if a value can be derived from existing variables, don't create a new state variable. i.e. full name can be derived from second name and first name
+
+### Group Related State Variables
+
+```
+const[person,setPerson] = useState({
+	firstName: '',
+	lastName:''
+})
+```
+
+Variables not related to a person should not be included in the same object
+Nested structures should be avoided, prefer a flat structure.
+
+## 37.  Keeping Components Pure
+Pure means that you will always get the same result.
+Any changes should be out of the render phase i.e. the function that returns the JSX, though if we create a value in the render phase, we can update that.
+
+## 38.  Understanding Strict Mode
+
+ In strict mode ( the default ) each component is rendered twice, once to look for issues, once to render to the DOM
+
+## 39. Updating Objects
+State objects are should be considered immutable. In order to update the state of an object a new object must be created for React to detect the change 
+
+![[Pasted image 20231108125202.png]]
+won't work as we are passing the same drink object to setDrink
+![[Pasted image 20231108125327.png]]
+Will work. 
+
+## 40. Updating Nested Objects
+This is a concrete example of why we need 
+
+![[Pasted image 20231108162317.png]]We nee to spread (...) the customer and the address, and then update the zipcode) this is to make sure that each object is new.
+
+## 41.  Updating Arrays
+Here we have an array that is stored in state
+![[Pasted image 20231108170546.png]]
+In order to trigger a re-render we need a new tags array :
+
+![[Pasted image 20231108170915.png]]
+the Remove filters tags any item that is equal to the value 'happy'
+The update updates any tag which is equal to 'happy' to 'happiness' otherwise the original value is used.
+
+## 42.  Updating an Array of objects
+We only need to replace any update object with a new object, we don'y have to create a new array in this case.
+Here we have an array of objects:
+![[Pasted image 20231109081411.png]]
+In order to update the first item to fixed:true
+![[Pasted image 20231109081607.png]]
+The above line starts setBugs(....
+
+## 43. Simplifying update logic with Immer
+This looks like it will be a useful library. re-watch the video for more information and checkout the site https://immerjs.github.io/immer/
+
+It significantly reduces the amount of boiler plate required to update state objects, and reduces the likelihood of bugs.
+
+Immer needs to be installed to sue it.
+
+## 44. Sharing State Between Components
+The example given is one of a shopping cart that is the child component of a header which contains the number of items in the shopping cart. The state needs to be lifted from the shopping cart to the header, and the state that the shopping cart used to use to render will be passed down the shopping cart through props.
+
+There is a clear button on the shopping cart, the on click method is passed in from the header component, and  the method to clear the cart is written on the header component to update the date there.
+
+
+
+
+
+
+
