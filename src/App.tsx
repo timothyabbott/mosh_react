@@ -4,6 +4,7 @@ import Button from "./components/Button";
 import DismisableAlert from "./components/DismisableAlert";
 import ListGroup from "./components/ListGroup";
 import Heart from "./components/Heart/Heart";
+import Person from "./components/Person";
 
 function App() {
   let items = ["New York", "London", "Paris", "Madrid"];
@@ -27,6 +28,7 @@ function App() {
 
   return (
     <>
+      <Person></Person>
       <Heart onClick={handleLikeClicked} />
       <ListGroup
         items={items}

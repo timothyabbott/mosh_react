@@ -199,7 +199,7 @@ Will work.
 ## 40. Updating Nested Objects
 This is a concrete example of why we need 
 
-![[Pasted image 20231108162317.png]]We nee to spread (...) the customer and the address, and then update the zipcode) this is to make sure that each object is new.
+![[Pasted image 20231108162317.png]]We need to spread (...) the customer and the address, and then update the zipcode) this is to make sure that each object is new.
 
 ## 41.  Updating Arrays
 Here we have an array that is stored in state
@@ -229,6 +229,8 @@ Immer needs to be installed to sue it.
 The example given is one of a shopping cart that is the child component of a header which contains the number of items in the shopping cart. The state needs to be lifted from the shopping cart to the header, and the state that the shopping cart used to use to render will be passed down the shopping cart through props.
 
 There is a clear button on the shopping cart, the on click method is passed in from the header component, and  the method to clear the cart is written on the header component to update the date there.
+
+## 45. Exercise: Updating state
 
 
 

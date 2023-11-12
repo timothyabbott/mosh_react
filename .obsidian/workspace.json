@@ -162,6 +162,8 @@
   },
   "active": "5a61af767004a0ce",
   "lastOpenFiles": [
+    "vite.config.ts.timestamp-1699707555425-79e4d93899434.mjs",
+    "src/components/Person.tsx",
     "Pasted image 20231109081607.png",
     "Pasted image 20231109081411.png",
     "Pasted image 20231108170915.png",
@@ -179,7 +181,6 @@
     "src/components/Button/Button.Module.css",
     "vite.config.ts.timestamp-1699179440703-eb1641c42a60c.mjs",
     "src/components/Button.tsx.bak",
-    "src/components/Button/index.tsx",
     "node_modules/react-icons/README.md",
     "node_modules/@emotion/unitless/README.md",
     "node_modules/css-to-react-native/README.md",
@@ -206,7 +207,6 @@
     "node_modules/uncontrollable/lib/README.md",
     "node_modules/uncontrollable/manual-releases.md",
     "node_modules/uncontrollable/CHANGELOG.md",
-    "node_modules/prop-types/README.md",
-    "Screenshot 2023-10-27 at 21.07.51.png"
+    "node_modules/prop-types/README.md"
   ]
 }
