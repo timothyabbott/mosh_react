@@ -1,8 +1,13 @@
-import React from "react";
+import React, { FormEvent } from "react";
 
 const Form = () => {
+  const handleSubmit = (event: FormEvent) => {
+    // by default the page is posted to a server and so we get a full page reload. we don't want that in this case
+    event.preventDefault();
+    console.log("form sumbitted");
+  };
   return (
-    <form>
+    <form onSubmit={handleSubmit}>
       <div className="mb-3">
         <label htmlFor="name" className="form-label">
           Name
