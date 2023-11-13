@@ -268,3 +268,17 @@ npm i react-hook-form@7.43
 
 A an advantage of using React Hook Form is that is doesn't use state, it uses refs. We don't have the render per key click issue.
 ## 53. Applying Validation
+## 54. SchemaBased Validation with Zod
+We will only be covering the very basics of Zod.
+```
+i zod@3.20.6    
+```
+
+we also need 
+```
+npm i @hookform/resolvers@2.9.11 
+```
+
+www.zod.dev has the complete documentation
+
+## 55. Disabling the Submit Button
