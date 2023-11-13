@@ -240,14 +240,17 @@ by default display the cropped text
 a button with an onClick that will toggle between cropped and full\
 boolean cropped state.
 
+# 47.  Building Forms
+## 48. Building a Form
 
+Boot strap will be used to give our forms a nice look and feel
 
+Handy shortcut: VScode allows for population of markup for a Give structure
 
+div.mb-3>label.form-label+input.form-control
 
-
-
-
-
-
-
-
+will produce
+```
+<div className="mb-3"><label htmlFor="" className="form-label"></label>
+<input type="text" className="form-control" /></div>
+```
