@@ -267,3 +267,4 @@ npm i react-hook-form@7.43
 ```
 
 A an advantage of using React Hook Form is that is doesn't use state, it uses refs. We don't have the render per key click issue.
+## 53. Applying Validation

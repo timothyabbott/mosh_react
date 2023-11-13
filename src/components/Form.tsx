@@ -1,8 +1,18 @@
 import React, { FormEvent, useRef, useState } from "react";
 import { FieldValues, useForm } from "react-hook-form";
 
+// creating this interface for formadata and using the interface with useForm means we get better code completion and reduce the chances of errors
+interface FormData {
+  name: String;
+  age: number;
+}
+
 const Form = () => {
-  const { register, handleSubmit } = useForm();
+  const {
+    register,
+    handleSubmit,
+    formState: { errors },
+  } = useForm<FormData>();
   const onSubmit = (data: FieldValues) => {
     console.log(data);
   };
@@ -14,11 +24,18 @@ const Form = () => {
           Name
         </label>
         <input
-          {...register("name")}
+          {...register("name", { required: true, minLength: 3 })}
           id="name"
           type="text"
           className="form-control"
         />
+        {/* the "?." is optional chaning in javascript if erros has no namem attribute the expression will be falsy without rasing an error.*/}
+        {errors.name?.type === "required" && (
+          <p className="text-danger">The name field is required</p>
+        )}
+        {errors.name?.type === "minLength" && (
+          <p className="text-danger">The name field is too short</p>
+        )}
       </div>
       <div className="mb-3">
         <label htmlFor="age" className="form-label">
