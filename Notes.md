@@ -282,3 +282,28 @@ npm i @hookform/resolvers@2.9.11
 www.zod.dev has the complete documentation
 
 ## 55. Disabling the Submit Button
+# 56. Notes Tracker
+### My Design:
+App
+	will have state/refs
+	Form
+		will have validation
+		Description
+		Amount
+		Category
+		Submit Button
+			will have on click which will call a method from props to add a new item
+	ItemDisplay
+		dropDown with an update method to filter Items
+		Table
+			Item consisting which will be mapped from all filtered items
+				{description:,
+				amount:
+				groceries,
+				Delete Button ( onclick will remove the current item from the State)}
+			Total displayed in table and calculated after every addition/removal of an item.
+## 57. Building ExpenseList
+## 58. Building Expense Filter
+
+			
+			
