@@ -258,3 +258,12 @@ will produce
 ## 49. Handling form Submission
 ## 50. Accessing Input Fields
 ## 51. Controlled Components
+## 52. Managing Forms with React Hook Form
+React Hook for is a library that can be used to when forms get more complicated. It means that each input element doesn't have to have the "onchange" and "value".
+
+The course uses version 7.43
+```
+npm i react-hook-form@7.43 
+```
+
+A an advantage of using React Hook Form is that is doesn't use state, it uses refs. We don't have the render per key click issue.
