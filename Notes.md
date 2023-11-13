@@ -231,6 +231,19 @@ The example given is one of a shopping cart that is the child component of a hea
 There is a clear button on the shopping cart, the on click method is passed in from the header component, and  the method to clear the cart is written on the header component to update the date there.
 
 ## 45. Exercise: Updating state
+## 46. Exercise: Creating an expandable text component.
+Design. 
+
+A component that takes text and text length.
+a function to "crop" the text.
+by default display the cropped text
+a button with an onClick that will toggle between cropped and full\
+boolean cropped state.
+
+
+
+
+
 
 
 

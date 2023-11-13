@@ -5,7 +5,7 @@ import DismisableAlert from "./components/DismisableAlert";
 import ListGroup from "./components/ListGroup";
 import Heart from "./components/Heart/Heart";
 import Person from "./components/Person";
-
+import ExpandableText from "./components/ExpandableText";
 function App() {
   let items = ["New York", "London", "Paris", "Madrid"];
 
@@ -28,6 +28,7 @@ function App() {
 
   return (
     <>
+      <ExpandableText length={10} text={items.join(" ")}></ExpandableText>
       <Person></Person>
       <Heart onClick={handleLikeClicked} />
       <ListGroup
