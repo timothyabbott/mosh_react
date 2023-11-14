@@ -3,6 +3,10 @@ import ExpensesList from "./components/ExpenseTracker/componenents/ExpensesList"
 import Expenses from "./components/ExpenseTracker/componenents/ExpensesList";
 import Form from "./components/Form";
 import ExpenseFilter from "./components/ExpenseTracker/componenents/ExpenseFilter";
+import ExpenseForm from "./components/ExpenseTracker/componenents/ExpenseForm";
+
+export const categories = ["Groceries", "Utilities", "Entertainment"];
+
 function App() {
   const [expenses, setExpenses] = useState([
     { id: 1, description: "aaaa", amount: 10, category: "Utilities" },
@@ -22,6 +26,9 @@ function App() {
   };
   return (
     <>
+      <div className="mb-5">
+        <ExpenseForm />
+      </div>
       <div className="mb-3">
         <ExpenseFilter
           onSelectCategory={(category) => onSelectCategory(category)}

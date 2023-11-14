@@ -304,6 +304,5 @@ App
 			Total displayed in table and calculated after every addition/removal of an item.
 ## 57. Building ExpenseList
 ## 58. Building Expense Filter
-
-			
-			
+## 59. Building Expense Form
+Handy shortcut CMD +. allows you to use context options such as refactoring and fixing problems, such as. imports.
