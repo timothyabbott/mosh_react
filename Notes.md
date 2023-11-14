@@ -306,3 +306,8 @@ App
 ## 58. Building Expense Filter
 ## 59. Building Expense Form
 Handy shortcut CMD +. allows you to use context options such as refactoring and fixing problems, such as. imports.
+## 60.  Integrating Redact Hook Form and Zod
+
+
+
+ 

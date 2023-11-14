@@ -162,6 +162,7 @@
   },
   "active": "5a61af767004a0ce",
   "lastOpenFiles": [
+    "src/components/ExpenseTracker/componenents/categories.ts",
     "src/components/ExpenseTracker/componenents/ExpenseForm.tsx",
     "src/components/ExpenseTracker/componenents/ExpenseForm.tsc",
     "src/components/ExpenseTracker/componenents/ExpensesForm.tsc",
@@ -172,7 +173,6 @@
     "src/components/ExpenseTracker/componenents",
     "src/components/ExpenseTracker/ExpenseItem.tsx",
     "src/components/ExpenseTracker",
-    "vite.config.ts.timestamp-1699887431122-62aecf5e3064d.mjs",
     "node_modules/@hookform/resolvers/README.md",
     "node_modules/zod/README.md",
     "node_modules/react-hook-form/README.md",

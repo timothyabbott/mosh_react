@@ -5,8 +5,6 @@ import Form from "./components/Form";
 import ExpenseFilter from "./components/ExpenseTracker/componenents/ExpenseFilter";
 import ExpenseForm from "./components/ExpenseTracker/componenents/ExpenseForm";
 
-export const categories = ["Groceries", "Utilities", "Entertainment"];
-
 function App() {
   const [expenses, setExpenses] = useState([
     { id: 1, description: "aaaa", amount: 10, category: "Utilities" },
