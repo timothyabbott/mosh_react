@@ -315,4 +315,18 @@ Handy shortcut CMD +. allows you to use context options such as refactoring and 
 Effect hooks are used to take an action after a component is rendered ( returned )
 we Need to keep components pure, i.e. no side effects. 
 
- 
+## 64. Effect Dependencies 
+ ```
+ useEffect(() => {
+
+console.log("fetching products in ", category);
+
+setProducts(["Clothing", "Household"]);
+
+// the second argument is a list of dependencies, for examples props, or state. If any of those values change then the effect will be called.
+
+// an empty array means that the effect will only be called once, on the first render.
+
+}, [category]);
+```
+## 65. Effect Clean up
