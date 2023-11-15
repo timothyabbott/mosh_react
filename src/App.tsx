@@ -1,47 +1,21 @@
-import { useState } from "react";
-import ExpensesList from "./components/ExpenseTracker/componenents/ExpensesList";
-import Expenses from "./components/ExpenseTracker/componenents/ExpensesList";
-import Form from "./components/Form";
-import ExpenseFilter from "./components/ExpenseTracker/componenents/ExpenseFilter";
-import ExpenseForm from "./components/ExpenseTracker/componenents/ExpenseForm";
+import React, { useEffect, useRef } from "react";
 
-function App() {
-  const [expenses, setExpenses] = useState([
-    { id: 1, description: "aaaa", amount: 10, category: "Utilities" },
-    { id: 2, description: "bbbb", amount: 11, category: "Bank" },
-    { id: 3, description: "cccc", amount: 12, category: "Phone" },
-    { id: 4, description: "dddd", amount: 13, category: "Electricity" },
-  ]);
+const App = () => {
+  const ref = useRef<HTMLInputElement>(null);
 
-  const [selectedCategory, setselectedCategory] = useState("");
+  // useEffect could be named "afterRender"
+  useEffect(() => {
+    if (ref.current) ref.current.focus();
+  });
+  useEffect(() => {
+    document.title = "whoop whoop!!";
+  });
 
-  const visibleExpenses = selectedCategory
-    ? expenses.filter((expense) => expense.category === selectedCategory)
-    : expenses;
-
-  const onSelectCategory = (category: string) => {
-    setselectedCategory(category);
-  };
   return (
-    <>
-      <div className="mb-5">
-        <ExpenseForm
-          onSubmit={(expense) =>
-            setExpenses([...expenses, { ...expense, id: expenses.length + 1 }])
-          }
-        />
-      </div>
-      <div className="mb-3">
-        <ExpenseFilter
-          onSelectCategory={(category) => onSelectCategory(category)}
-        />
-      </div>
-      <ExpensesList
-        expenses={visibleExpenses}
-        onDelete={(id) => setExpenses(expenses.filter((e) => e.id !== id))}
-      />
-    </>
+    <div>
+      <input ref={ref} type="text" className="form-control" />
+    </div>
   );
-}
+};
 
 export default App;

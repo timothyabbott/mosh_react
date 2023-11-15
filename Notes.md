@@ -309,5 +309,10 @@ Handy shortcut CMD +. allows you to use context options such as refactoring and 
 ## 60.  Integrating Redact Hook Form and Zod
 ## 61. Adding an Expense
 
+# 62. Connecting to the Back End
+## 63. Understanding the Effect Hook
+
+Effect hooks are used to take an action after a component is rendered ( returned )
+we Need to keep components pure, i.e. no side effects. 
 
  
