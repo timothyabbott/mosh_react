@@ -374,3 +374,6 @@ In javascript, All promises have a catch() method.
 This is an alternative to using .then.catch
 
 The .then.catch seems simpler and more concise.
+
+## 70. Cancelling a fetch request
+when running react in strict mode there is an "error checking" render and a real render.  This has the effect of a user navigating  away from the page, unloading the component, thus cancelling the request.

@@ -162,6 +162,7 @@
   },
   "active": "5a61af767004a0ce",
   "lastOpenFiles": [
+    "vite.config.ts.timestamp-1700077946589-0a376f63e752f.mjs",
     "vite.config.ts.timestamp-1700065969293-4d37c9cbadbc3.mjs",
     "node_modules/axios/index.d.ts",
     "node_modules/axios/SECURITY.md",
@@ -176,7 +177,6 @@
     "node_modules/axios/dist/axios.min.js",
     "node_modules/axios/dist/esm/axios.min.js.map",
     "node_modules/axios/dist/esm/axios.min.js",
-    "node_modules/axios/dist/esm/axios.js.map",
     "node_modules/axios/lib/helpers/README.md",
     "node_modules/axios/lib/env/README.md",
     "node_modules/axios/lib/core/README.md",
