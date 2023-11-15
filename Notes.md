@@ -347,3 +347,16 @@ const App = () => {
 ```
 The reason that you can disconnect is because of dev mode. The initial "dev" render occurs  before the actual render to the DOM. Disconnecting appears because the initial render has to unmount the component.
 ![[Pasted image 20231115151314.png]]
+## 66. Fetch Data
+www.jsonplaceholder.com is a good place to test out an HTTP request.
+Fetch() is often used, but Axios is a library that many people prefer
+
+`npm i axios@1.3.4`
+
+don't forget the empty array as a dependency:
+```  useEffect(() => {
+    axios
+      .get<User[]>("https://jsonplaceholder.typicode.com/users")
+      .then((response) => setUsers(response.data));
+  }, []);
+```
