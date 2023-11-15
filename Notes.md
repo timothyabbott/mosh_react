@@ -367,3 +367,5 @@ When an http request is sent, a response is received.
 Every request and response has two sections; a header which contains metadata, and a body is the actual data
 
 
+## 68. Handling Errors
+In javascript, All promises have a catch() method. 
