@@ -369,3 +369,8 @@ Every request and response has two sections; a header which contains metadata, a
 
 ## 68. Handling Errors
 In javascript, All promises have a catch() method. 
+
+## 69. Working with Async and Await
+This is an alternative to using .then.catch
+
+The .then.catch seems simpler and more concise.
