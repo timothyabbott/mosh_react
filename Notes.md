@@ -360,3 +360,10 @@ don't forget the empty array as a dependency:
       .then((response) => setUsers(response.data));
   }, []);
 ```
+
+## 67. Understanding HTTP requests.
+When an http request is sent, a response is received.
+
+Every request and response has two sections; a header which contains metadata, and a body is the actual data
+
+
