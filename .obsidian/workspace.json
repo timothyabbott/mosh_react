@@ -162,6 +162,7 @@
   },
   "active": "5a61af767004a0ce",
   "lastOpenFiles": [
+    "Pasted image 20231115151314.png",
     "src/components/ProductList.tsx",
     "vite.config.ts.timestamp-1700056464492-60877751f845.mjs",
     "src/components/ExpenseTracker/componenents/categories.ts",
@@ -172,7 +173,6 @@
     "src/components/ExpenseTracker/componenents/ExpensesList.tsx",
     "src/components/ExpenseTracker/componenents/Expense.tsx",
     "src/components/ExpenseTracker/componenents/ExpenseItem.tsx",
-    "src/components/ExpenseTracker/componenents",
     "node_modules/@hookform/resolvers/README.md",
     "node_modules/zod/README.md",
     "node_modules/react-hook-form/README.md",

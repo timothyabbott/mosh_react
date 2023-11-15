@@ -330,3 +330,20 @@ setProducts(["Clothing", "Household"]);
 }, [category]);
 ```
 ## 65. Effect Clean up
+
+```
+const connect = () => console.log("connecting");
+const disconnect = () => console.log("disconnecting");
+
+const App = () => {
+  const ref = useRef<HTMLInputElement>(null);
+  const [category, setCategory] = useState("");
+
+  useEffect(() => {
+    connect();
+// this is the cleanup code. If anything has been set, that needs to be undone / closed etc, this is the place to do it.
+    return () => disconnect();
+  });
+```
+The reason that you can disconnect is because of dev mode. The initial "dev" render occurs  before the actual render to the DOM. Disconnecting appears because the initial render has to unmount the component.
+![[Pasted image 20231115151314.png]]

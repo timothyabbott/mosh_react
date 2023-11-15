@@ -1,9 +1,18 @@
 import React, { useEffect, useRef, useState } from "react";
 import ProductList from "./components/ProductList";
 
+const connect = () => console.log("connecting");
+const disconnect = () => console.log("disconnecting");
+
 const App = () => {
   const ref = useRef<HTMLInputElement>(null);
   const [category, setCategory] = useState("");
+
+  useEffect(() => {
+    connect();
+    // this is the cleanup code. If anything has been set, that needs to be undone / closed etc, this is the place to do it.
+    return () => disconnect();
+  });
 
   // useEffect could be named "afterRender"
   useEffect(() => {
