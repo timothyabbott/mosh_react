@@ -162,6 +162,8 @@
   },
   "active": "5a61af767004a0ce",
   "lastOpenFiles": [
+    "src/hooks/useUsers.ts",
+    "src/hooks",
     "src/services/http-service.ts",
     "src/services/user-service.ts",
     "src/services/api-client.ts",
@@ -175,8 +177,6 @@
     "node_modules/axios/MIGRATION_GUIDE.md",
     "node_modules/axios/CHANGELOG.md",
     "node_modules/axios/dist/axios.min.js.map",
-    "node_modules/axios/dist/axios.js.map",
-    "node_modules/axios/dist/browser/axios.cjs.map",
     "node_modules/axios/lib/helpers/README.md",
     "node_modules/axios/lib/env/README.md",
     "node_modules/axios/lib/core/README.md",

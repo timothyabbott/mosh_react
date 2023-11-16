@@ -425,5 +425,11 @@ This is all refactoring work, a useful approach. Here we remove the axios client
 moved various function from the App component to a user service
 
 ## 77. Creating a Generic HTTP Service
-Created a generic Http service that can be used by different services.Make use of `<T>` to represent a generic type
-78. 
+Created a generic Http service that can be u sed by different services.Make use of `<T>` to represent a generic type
+## 78. Creating a Custom Fetching Hook
+A hook is just a function. With the current implementation the useEffect hook is responsible for setting the error, user and loading states. It is convention for hooks to be named use......
+
+By moving the code associated with the useEffect hook from the component to a custom hook, that hook can be used by another hook in the future.
+
+
+80. 
