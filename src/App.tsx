@@ -1,6 +1,6 @@
-import axios, { AxiosError, CanceledError } from "axios";
 import { useEffect, useState } from "react";
 import { Controller } from "react-hook-form";
+import apiClient, { CanceledError } from "./services/api-client";
 
 interface User {
   id: number;
@@ -15,8 +15,8 @@ function App() {
   useEffect(() => {
     const controller = new AbortController();
     setIsLoading(true);
-    axios
-      .get<User[]>("https://jsonplaceholder.typicode.com/users", {
+    apiClient
+      .get<User[]>("/users", {
         signal: controller.signal,
       })
       .then((response) => {
@@ -38,20 +38,18 @@ function App() {
   function deleteUser(user: User): void {
     const originalUsers = users;
     setUsers(users.filter((usr) => usr.id !== user.id));
-    axios
-      .delete("https://jsonplaceholder.typicode.com/users/" + user.id)
-      .catch((error) => {
-        setError(error.message);
-        setUsers(originalUsers);
-      });
+    apiClient.delete("/users/" + user.id).catch((error) => {
+      setError(error.message);
+      setUsers(originalUsers);
+    });
   }
 
   const addUser = () => {
     const newUser = { id: 0, name: "Tim" };
     const originalUsers = users;
     setUsers([newUser, ...users]);
-    axios
-      .post("https://jsonplaceholder.typicode.com/users", newUser)
+    apiClient
+      .post("/users", newUser)
       .then((response) => setUsers([response.data, ...users]))
       .catch((error) => {
         setError(error.message);
@@ -64,15 +62,10 @@ function App() {
     const updatedUser = { ...user, name: user.name + "!" };
     setUsers(users.map((usr) => (usr.id === user.id ? updatedUser : usr)));
     // "We are patching because we are only changing a small subset of a user object on the server"
-    axios
-      .patch(
-        "https://jsonplaceholder.typicode.com/users/" + user.id,
-        updatedUser
-      )
-      .catch((error) => {
-        setError(error.message);
-        setUsers([...originalUsers]);
-      });
+    apiClient.patch("/users/" + user.id, updatedUser).catch((error) => {
+      setError(error.message);
+      setUsers([...originalUsers]);
+    });
   };
 
   return (

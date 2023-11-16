@@ -419,4 +419,7 @@ we use the div here so that we get a nice layout. Because of  the flex box, the 
 
 
 
-75. 
+## 75. Extracting a Reusable API Client 
+This is all refactoring work, a useful approach. Here we remove the axios client into its own module
+
+77. 
