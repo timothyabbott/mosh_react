@@ -1,11 +1,6 @@
 import { useEffect, useState } from "react";
-import { Controller } from "react-hook-form";
-import apiClient, { CanceledError } from "./services/api-client";
-
-interface User {
-  id: number;
-  name: string;
-}
+import { CanceledError } from "./services/api-client";
+import userService, { User } from "./services/user-service";
 
 function App() {
   const [error, setError] = useState("");
@@ -13,12 +8,9 @@ function App() {
   const [isLoading, setIsLoading] = useState(false);
 
   useEffect(() => {
-    const controller = new AbortController();
     setIsLoading(true);
-    apiClient
-      .get<User[]>("/users", {
-        signal: controller.signal,
-      })
+    const { request, cancel } = userService.getAllUsers();
+    request
       .then((response) => {
         setUsers(response.data);
         setIsLoading(false);
@@ -28,17 +20,13 @@ function App() {
         setError(error.message);
         setIsLoading(false);
       });
-    //  the below should work and even mosh doesn't know why it doesn't
-    // .finally(() => {
-    //   setIsLoading(false);
-    // });
-
-    return () => controller.abort();
+    return () => cancel();
   }, []);
+
   function deleteUser(user: User): void {
     const originalUsers = users;
     setUsers(users.filter((usr) => usr.id !== user.id));
-    apiClient.delete("/users/" + user.id).catch((error) => {
+    userService.deleteUser(user.id).catch((error) => {
       setError(error.message);
       setUsers(originalUsers);
     });
@@ -48,8 +36,8 @@ function App() {
     const newUser = { id: 0, name: "Tim" };
     const originalUsers = users;
     setUsers([newUser, ...users]);
-    apiClient
-      .post("/users", newUser)
+    userService
+      .addUser(newUser)
       .then((response) => setUsers([response.data, ...users]))
       .catch((error) => {
         setError(error.message);
@@ -58,11 +46,10 @@ function App() {
   };
   const updateUser = (user: User) => {
     const originalUsers = users;
-
     const updatedUser = { ...user, name: user.name + "!" };
     setUsers(users.map((usr) => (usr.id === user.id ? updatedUser : usr)));
     // "We are patching because we are only changing a small subset of a user object on the server"
-    apiClient.patch("/users/" + user.id, updatedUser).catch((error) => {
+    userService.updateUser(updatedUser).catch((error) => {
       setError(error.message);
       setUsers([...originalUsers]);
     });

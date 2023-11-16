@@ -162,6 +162,7 @@
   },
   "active": "5a61af767004a0ce",
   "lastOpenFiles": [
+    "src/services/user-service.ts",
     "src/services/api-client.ts",
     "src/services/api-clients.ts",
     "src/services",
@@ -176,7 +177,6 @@
     "node_modules/axios/dist/axios.js.map",
     "node_modules/axios/dist/browser/axios.cjs.map",
     "node_modules/axios/package.json",
-    "node_modules/axios/index.js",
     "node_modules/axios/lib/helpers/README.md",
     "node_modules/axios/lib/env/README.md",
     "node_modules/axios/lib/core/README.md",
