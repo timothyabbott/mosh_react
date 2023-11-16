@@ -9,7 +9,7 @@ function App() {
 
   useEffect(() => {
     setIsLoading(true);
-    const { request, cancel } = userService.getAllUsers();
+    const { request, cancel } = userService.getAll<User>();
     request
       .then((response) => {
         setUsers(response.data);
@@ -26,7 +26,7 @@ function App() {
   function deleteUser(user: User): void {
     const originalUsers = users;
     setUsers(users.filter((usr) => usr.id !== user.id));
-    userService.deleteUser(user.id).catch((error) => {
+    userService.delete(user.id).catch((error) => {
       setError(error.message);
       setUsers(originalUsers);
     });
@@ -37,7 +37,7 @@ function App() {
     const originalUsers = users;
     setUsers([newUser, ...users]);
     userService
-      .addUser(newUser)
+      .create(newUser)
       .then((response) => setUsers([response.data, ...users]))
       .catch((error) => {
         setError(error.message);
@@ -49,7 +49,7 @@ function App() {
     const updatedUser = { ...user, name: user.name + "!" };
     setUsers(users.map((usr) => (usr.id === user.id ? updatedUser : usr)));
     // "We are patching because we are only changing a small subset of a user object on the server"
-    userService.updateUser(updatedUser).catch((error) => {
+    userService.update(updatedUser).catch((error) => {
       setError(error.message);
       setUsers([...originalUsers]);
     });
