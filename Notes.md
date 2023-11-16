@@ -377,3 +377,11 @@ The .then.catch seems simpler and more concise.
 
 ## 70. Cancelling a fetch request
 when running react in strict mode there is an "error checking" render and a real render.  This has the effect of a user navigating  away from the page, unloading the component, thus cancelling the request.
+
+## 71. Showing a Loading Indicator
+## 72. Deleting Data.
+To get the nice layout alignment flex box was used. for more information https://css-tricks.com/snippets/css/a-guide-to-flexbox/#aa-background
+
+list-group-item d-flex justify-content-between on each list item are the class names from boot strap that give the nice layout
+
+## 73. Creating Data
