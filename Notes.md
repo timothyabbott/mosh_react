@@ -385,3 +385,17 @@ To get the nice layout alignment flex box was used. for more information https:/
 list-group-item d-flex justify-content-between on each list item are the class names from boot strap that give the nice layout
 
 ## 73. Creating Data
+```
+  const addUser = () => {
+    const newUser = { id: 0, name: "Tim" };
+    setUsers([newUser, ...users]);
+    axios
+      .post("https://jsonplaceholder.typicode.com/users", newUser)
+      .then(({ data: savedUser }) => setUsers([savedUser, ...users]));
+  };
+```
+we have de structured the response from axios here so that we can refer to the data attribute directly. It has also been given the alias savedUser.
+
+previously this was 
+`.then((response) => setUsers([response.data, ...users]));`
+
