@@ -399,3 +399,24 @@ we have de structured the response from axios here so that we can refer to the d
 previously this was 
 `.then((response) => setUsers([response.data, ...users]));`
 
+## 74. Updating Data
+```
+  <div>
+              {/* mx-1 means margin horizontal 1 */}
+              <button className="btn btn-outline-secondary mx-1">
+                {" "}
+                Update
+              </button>
+              <button
+                onClick={() => deleteUser(user)}
+                className="btn btn-outline-danger"
+              >
+                Delete
+              </button>
+            </div>
+```
+we use the div here so that we get a nice layout. Because of  the flex box, the div containing both buttons floats to the right, and name to the left
+
+
+
+75. 
